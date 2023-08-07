@@ -6,7 +6,7 @@ import Footer from "../components/Footer/Footer";
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { user, logIn } = UserAuth();
+  const { logIn } = UserAuth();
   const navigate = useNavigate();
   const [error, setError] = useState("");
 
