@@ -53,7 +53,7 @@ function Login() {
             </label>
             <input
               className="text-[1.7rem] px-8 py-4 mb-10 w-full outline-[#eab308] "
-              placeholder="gymate@gymail.com"
+              placeholder="yourName@gymail.com"
               type="email"
               onChange={(e) => setEmail(e.target.value)}
             ></input>
@@ -75,19 +75,13 @@ function Login() {
               Sign In
             </button>
             <div className="flex gap-4 items-center mt-16 min450:flex-col">
-              <p className="text-white text-[1.5rem]">New to Gymate?</p>
+              <p className="text-white text-[1.5rem]">New to Fitbox?</p>
               <Link
                 to="/signup"
-                className="text-[#eab308] font-bold text-[1.5rem]"
-              >
+                className="text-[#eab308] font-bold text-[1.5rem]">
                 Sign Up
               </Link>
             </div>
-            <p className="text-[#ffffffbc] text-[1.4rem] mt-3">
-              <span className="text-[#eab308]">Test Account</span> -
-              gymate@gymail.com <span className="text-[#eab308]"> / </span>
-              testpassword123
-            </p>
           </form>
         </div>
         <Footer />

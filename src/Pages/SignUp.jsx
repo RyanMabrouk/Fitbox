@@ -45,7 +45,7 @@ function Signup() {
             </label>
             <input
               className="text-[1.7rem] px-8 py-4 mb-10 w-full outline-[#eab308] "
-              placeholder="gymate@gymail.com"
+              placeholder="yourName@gymail.com"
               type="email"
               onChange={(e) => setEmail(e.target.value)}
             ></input>
@@ -76,9 +76,7 @@ function Signup() {
               </Link>
             </div>
             <p className="text-[#ffffffbc] text-[1.3rem] mt-5">
-              ( Make <span className="text-[#eab308]">new Accout</span> or go to
-              <span className="text-[#eab308]"> Sign In</span> Page for Test
-              Account )
+              ( Make <span className="text-[#eab308]">new Accout</span>)
             </p>
           </form>
         </div>
