@@ -43,7 +43,7 @@ function About() {
               </p>
               <MainButton
                 color={`!text-white`}
-                bg={`bg-[#ff0336]`}
+                bg={`bg-[#eab308]`}
                 goTo="/contact"
                 text="contact us"
                 arrowColor={`!text-white`}
