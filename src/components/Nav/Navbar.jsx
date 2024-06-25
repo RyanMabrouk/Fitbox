@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Logo from "../../images/logo/logo.png";
+import Logo from "../../images/logo/logo2.png";
 import NavList from "../Nav/NavList";
 import { Link } from "react-router-dom";
-import LogoSide from "../../images/logo/logo-footer.png";
+import LogoSide from "../../images/logo/logo.png";
 import SideImg1 from "../../images/sidebar/1.jpg";
 import SideImg2 from "../../images/sidebar/2.jpg";
 import SideImg3 from "../../images/sidebar/3.jpg";
@@ -14,9 +14,7 @@ function Navbar() {
   const [spin, setSpin] = useState(false);
   const [sticky, setSticky] = useState(false);
   const [sidebar, setSideBar] = useState(false);
-  console.log("🚀 ~ Navbar ~ sidebar:", sidebar);
   const [hamburger, setHamburger] = useState(false);
-  console.log("🚀 ~ Navbar ~ hamburger:", hamburger);
 
   const joinSpin = () => {
     setSpin(true);
@@ -67,7 +65,7 @@ function Navbar() {
             src={Logo}
             alt="logo_img"
             onClick={goTop}
-            className="h-auto max-h-full w-32 max-w-full"
+            className="h-auto max-h-full w-[5rem] max-w-full rounded-full bg-clip-text text-transparent"
           />
         </Link>
         <NavList />
@@ -164,13 +162,17 @@ function Navbar() {
             {/* sidebar */}
             <div>
               <div
-                className={`fixed top-0 z-[50] flex h-[100vh] w-[40rem] flex-col gap-24 overflow-x-hidden bg-white p-[45px] duration-[0.5s] ease-in-out min450:w-full ${
+                className={`fixed top-0 z-[50] flex h-[100vh] w-[40rem] flex-col gap-24 overflow-x-hidden bg-white px-[45px] pb-10 duration-[0.5s] ease-in-out min450:w-full ${
                   sidebar ? "!left-0" : "!-left-[150%]"
                 }`}
               >
                 {/* logo & X */}
-                <div className="flex items-center justify-between">
-                  <img src={LogoSide} alt="logo_img" className="w-[13rem]" />
+                <div className="-mt-20 flex items-center justify-between">
+                  <img
+                    src={LogoSide}
+                    alt="logo_img"
+                    className="w-[24rem] rounded-full object-cover"
+                  />
                   <i
                     onClick={sideBar}
                     className="fa-solid fa-xmark cursor-pointer text-[3.3rem] text-[#eab308]"
