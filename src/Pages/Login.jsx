@@ -32,37 +32,37 @@ function Login() {
   return (
     <>
       <section className="login-section">
-        <div className="login-banner relative justify-center flex">
-          <h1 className="text-white absolute bottom-[25px] text-[3rem] font-bold">
+        <div className="login-banner relative flex justify-center">
+          <h1 className="absolute bottom-[25px] text-[3rem] font-bold text-white">
             Sign In
           </h1>
         </div>
         {/* form  */}
-        <div className="page-padding py-[10rem] flex justify-center">
+        <div className="page-padding flex justify-center py-[10rem]">
           <form
             onSubmit={handleSubmit}
-            className="flex flex-col py-40 px-20 bg-black w-[55rem] min450:w-full  shadow-xl"
+            className="flex w-[55rem] flex-col bg-black px-20 py-40 shadow-xl min450:w-full"
           >
             {error ? (
-              <p className="text-white bg-[#eab308] font-bold text-[1.6rem] px-10 py-5 text-center mb-10">
+              <p className="mb-10 bg-[#eab308] px-10 py-5 text-center text-[1.6rem] font-bold text-white">
                 Wrong email or password
               </p>
             ) : null}
-            <label className="text-[2rem] text-white mb-3 font-medium ">
+            <label className="mb-3 text-[2rem] font-medium text-white">
               Email
             </label>
             <input
-              className="text-[1.7rem] px-8 py-4 mb-10 w-full outline-[#eab308] "
+              className="mb-10 w-full px-8 py-4 text-[1.7rem] outline-[#eab308]"
               placeholder="yourName@gymail.com"
               type="email"
               onChange={(e) => setEmail(e.target.value)}
             ></input>
 
-            <label className="text-[2rem] text-white mb-3 font-medium outline-[#eab308] outline-2">
+            <label className="mb-3 text-[2rem] font-medium text-white outline-2 outline-[#eab308]">
               Password
             </label>
             <input
-              className="text-[1.7rem] px-8 py-4 mb-10 w-full outline-[#eab308] "
+              className="mb-10 w-full px-8 py-4 text-[1.7rem] outline-[#eab308]"
               placeholder="password"
               type="password"
               onChange={(e) => setPassword(e.target.value)}
@@ -70,15 +70,16 @@ function Login() {
 
             <button
               type="submit"
-              className="bg-[#eab308] text-white py-4 font-medium text-[2rem] w-full mt-10"
+              className="mt-10 w-full bg-[#eab308] py-4 text-[2rem] font-medium text-white"
             >
               Sign In
             </button>
-            <div className="flex gap-4 items-center mt-16 min450:flex-col">
-              <p className="text-white text-[1.5rem]">New to Fitbox?</p>
+            <div className="mt-16 flex items-center gap-4 min450:flex-col">
+              <p className="text-[1.5rem] text-white">New to Fitbox?</p>
               <Link
                 to="/signup"
-                className="text-[#eab308] font-bold text-[1.5rem]">
+                className="text-[1.5rem] font-bold text-[#eab308]"
+              >
                 Sign Up
               </Link>
             </div>

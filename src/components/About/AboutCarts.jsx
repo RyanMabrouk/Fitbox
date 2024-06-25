@@ -6,11 +6,11 @@ function AboutCarts() {
       {cardList.map((card, id) => (
         <div
           key={id}
-          className="flex flex-col cursor-pointer bg-white justify-center py-6 px-10 text-center items-center mt-12 rounded-tl-[35px] rounded-br-[35px] shadow-2xl min-h-[340px] w-full card-item-div md1000:min-h-[260px]"
+          className="card-item-div mt-12 flex min-h-[340px] w-full cursor-pointer flex-col items-center justify-center rounded-br-[35px] rounded-tl-[35px] bg-white px-10 py-6 text-center shadow-2xl transition-all duration-300 ease-linear md1000:min-h-[260px]"
         >
-          <img src={card.img} alt="box_img" className=" w-[75px] mb-4" />
-          <p className=" text-[24px] font-bold uppercase mb-7">{card.title}</p>
-          <p className="text-[15px] font-medium leading-2 w-full">
+          <img src={card.img} alt="box_img" className="mb-4 w-[75px]" />
+          <p className="mb-7 text-[24px] font-bold uppercase">{card.title}</p>
+          <p className="leading-2 w-full text-[15px] font-medium">
             {card.description}
           </p>
         </div>

@@ -18,13 +18,13 @@ function Blog() {
   return (
     <>
       <section>
-        <div className="login-banner relative justify-center flex">
-          <h1 className="text-white absolute bottom-[25px] text-[3rem] font-bold">
+        <div className="login-banner relative flex justify-center">
+          <h1 className="absolute bottom-[25px] text-[3rem] font-bold text-white">
             Blog
           </h1>
         </div>
         {/* blog */}
-        <div className="py-[10rem] container gap-16 page-padding grid grid-cols-[64fr_35fr] md1000:grid-cols-1 md1000:gap-32">
+        <div className="page-padding container grid grid-cols-[64fr_35fr] gap-16 py-[10rem] md1000:grid-cols-1 md1000:gap-32">
           {/* blog */}
           <div className="flex flex-col gap-28">
             <BlogBox img={Img1} title="Yoga For Everyone in 2023" />
@@ -53,65 +53,65 @@ function Blog() {
             {/* form */}
             <form className="flex">
               <input
-                className="border-solid border-[1px] text-[#444] text-[16px] font-medium h-[60px] py-[5px] px-[20px] w-full rounded-tl-xl rounded-bl-xl outline-none"
+                className="h-[60px] w-full rounded-bl-xl rounded-tl-xl border-[1px] border-solid px-[20px] py-[5px] text-[16px] font-medium text-[#444] outline-none"
                 type="search"
                 placeholder="Search..."
               ></input>
               <button type="submit">
-                <i className="fa-solid fa-magnifying-glass bg-[#eab308] text-white text-[23px] h-[60px] w-[60px] rounded-br-xl rounded-tr-xl pt-[18px]"></i>
+                <i className="fa-solid fa-magnifying-glass h-[60px] w-[60px] rounded-br-xl rounded-tr-xl bg-[#eab308] pt-[18px] text-[23px] text-white"></i>
               </button>
             </form>
 
             {/* categories */}
-            <div className="flex flex-col bg-[#f8f8f8] my-[35px] p-[30px]">
-              <p className="text-[18px] text-black font-bold mb-5">
+            <div className="my-[35px] flex flex-col bg-[#f8f8f8] p-[30px]">
+              <p className="mb-5 text-[18px] font-bold text-black">
                 Categories
               </p>
-              <span className="w-[40px] h-[3.5px] bg-[#eab308]"></span>
-              <ul className="text-[16px] text-[#7e7e7e] font-medium mt-10">
-                <li className="cursor-pointer flex justify-between border-b border-[#dcd9d9] pb-6 mb-10 hover:text-[#eab308] ease-in duration-200">
+              <span className="h-[3.5px] w-[40px] bg-[#eab308]"></span>
+              <ul className="mt-10 text-[16px] font-medium text-[#7e7e7e]">
+                <li className="mb-10 flex cursor-pointer justify-between border-b border-[#dcd9d9] pb-6 duration-200 ease-in hover:text-[#eab308]">
                   <p>
-                    <i className="text-[13px]  fa-solid fa-chevron-right"></i>
+                    <i className="fa-solid fa-chevron-right text-[13px]"></i>
                     &nbsp; Body Building
                   </p>
                   <span>(4)</span>
                 </li>
 
-                <li className="cursor-pointer flex justify-between border-b border-[#dcd9d9] pb-6 mb-10 hover:text-[#eab308] ease-in duration-200">
+                <li className="mb-10 flex cursor-pointer justify-between border-b border-[#dcd9d9] pb-6 duration-200 ease-in hover:text-[#eab308]">
                   <p>
-                    <i className="text-[13px]  fa-solid fa-chevron-right"></i>
+                    <i className="fa-solid fa-chevron-right text-[13px]"></i>
                     &nbsp; Boxing
                   </p>
                   <span>(4)</span>
                 </li>
 
-                <li className="cursor-pointer flex justify-between border-b border-[#dcd9d9] pb-6 mb-10 hover:text-[#eab308] ease-in duration-200">
+                <li className="mb-10 flex cursor-pointer justify-between border-b border-[#dcd9d9] pb-6 duration-200 ease-in hover:text-[#eab308]">
                   <p>
-                    <i className="text-[13px]  fa-solid fa-chevron-right"></i>
+                    <i className="fa-solid fa-chevron-right text-[13px]"></i>
                     &nbsp; Crossfit
                   </p>
                   <span>(4)</span>
                 </li>
 
-                <li className="cursor-pointer flex justify-between border-b border-[#dcd9d9] pb-6 mb-10 hover:text-[#eab308] ease-in duration-200">
+                <li className="mb-10 flex cursor-pointer justify-between border-b border-[#dcd9d9] pb-6 duration-200 ease-in hover:text-[#eab308]">
                   <p>
-                    <i className="text-[13px]  fa-solid fa-chevron-right"></i>
+                    <i className="fa-solid fa-chevron-right text-[13px]"></i>
                     &nbsp; Fitness
                   </p>
                   <span>(4)</span>
                 </li>
 
-                <li className="flex justify-between border-b border-[#dcd9d9] pb-6 mb-10 hover:text-[#eab308] ease-in duration-200">
+                <li className="mb-10 flex justify-between border-b border-[#dcd9d9] pb-6 duration-200 ease-in hover:text-[#eab308]">
                   <p>
-                    <i className="text-[13px] fa-solid fa-chevron-right"></i>
+                    <i className="fa-solid fa-chevron-right text-[13px]"></i>
                     &nbsp; Meditation
                   </p>
                   <span>(4)</span>
                 </li>
 
-                <li className="cursor-pointer flex justify-between border-b border-[#dcd9d9] pb-6 mb-10 hover:text-[#eab308] ease-in duration-200">
+                <li className="mb-10 flex cursor-pointer justify-between border-b border-[#dcd9d9] pb-6 duration-200 ease-in hover:text-[#eab308]">
                   <p>
-                    <i className="text-[13px]  fa-solid fa-chevron-right"></i>
+                    <i className="fa-solid fa-chevron-right text-[13px]"></i>
                     &nbsp; Yoga
                   </p>
                   <span>(4)</span>
@@ -119,20 +119,20 @@ function Blog() {
               </ul>
             </div>
             {/* recent posts */}
-            <div className="flex flex-col bg-[#f8f8f8] my-[35px] p-[30px]">
-              <p className="text-[18px] text-black font-bold mb-5">
+            <div className="my-[35px] flex flex-col bg-[#f8f8f8] p-[30px]">
+              <p className="mb-5 text-[18px] font-bold text-black">
                 Recent Posts
               </p>
-              <span className="w-[40px] h-[3.5px] bg-[#eab308] mb-7"></span>
+              <span className="mb-7 h-[3.5px] w-[40px] bg-[#eab308]"></span>
               <div className="flex flex-col gap-7">
                 {/*  */}
                 <div className="flex gap-8">
                   <img src={Recent1} alt="recent_img" className="w-[10rem]" />
-                  <div className="flex flex-col gap-4 justify-center">
-                    <p className="text-[14px] text-[#646464] font-medium">
+                  <div className="flex flex-col justify-center gap-4">
+                    <p className="text-[14px] font-medium text-[#646464]">
                       March 22, 2023
                     </p>
-                    <p className="text-[16px] text-black hover:text-[#eab308] ease-in duration-200 cursor-pointer font-bold">
+                    <p className="cursor-pointer text-[16px] font-bold text-black duration-200 ease-in hover:text-[#eab308]">
                       Yoga For Everyone in 2023
                     </p>
                   </div>
@@ -140,11 +140,11 @@ function Blog() {
                 {/*  */}
                 <div className="flex gap-8">
                   <img src={Recent2} alt="recent_img" className="w-[10rem]" />
-                  <div className="flex flex-col gap-4 justify-center">
-                    <p className="text-[14px] text-[#646464] font-medium">
+                  <div className="flex flex-col justify-center gap-4">
+                    <p className="text-[14px] font-medium text-[#646464]">
                       March 22, 2023
                     </p>
-                    <p className="text-[16px] text-black hover:text-[#eab308] ease-in duration-200 cursor-pointer font-bold">
+                    <p className="cursor-pointer text-[16px] font-bold text-black duration-200 ease-in hover:text-[#eab308]">
                       Getting Back Into CrossFit
                     </p>
                   </div>
@@ -152,11 +152,11 @@ function Blog() {
                 {/*  */}
                 <div className="flex gap-8">
                   <img src={Recent3} alt="recent_img" className="w-[10rem]" />
-                  <div className="flex flex-col gap-4 justify-center">
-                    <p className="text-[14px] text-[#646464] font-medium">
+                  <div className="flex flex-col justify-center gap-4">
+                    <p className="text-[14px] font-medium text-[#646464]">
                       March 22, 2023
                     </p>
-                    <p className="text-[16px] text-black hover:text-[#eab308] ease-in duration-200 cursor-pointer font-bold">
+                    <p className="cursor-pointer text-[16px] font-bold text-black duration-200 ease-in hover:text-[#eab308]">
                       Meet Fitness Abassador Grace
                     </p>
                   </div>
@@ -164,11 +164,11 @@ function Blog() {
                 {/*  */}
                 <div className="flex gap-8">
                   <img src={Recent4} alt="recent_img" className="w-[10rem]" />
-                  <div className="flex flex-col gap-4 justify-center">
-                    <p className="text-[14px] text-[#646464] font-medium">
+                  <div className="flex flex-col justify-center gap-4">
+                    <p className="text-[14px] font-medium text-[#646464]">
                       March 22, 2023
                     </p>
-                    <p className="text-[16px] text-black hover:text-[#eab308] ease-in duration-200 cursor-pointer font-bold">
+                    <p className="cursor-pointer text-[16px] font-bold text-black duration-200 ease-in hover:text-[#eab308]">
                       The best are European Meditation Practitioner
                     </p>
                   </div>
@@ -176,11 +176,11 @@ function Blog() {
                 {/*  */}
                 <div className="flex gap-8">
                   <img src={Recent5} alt="recent_img" className="w-[10rem]" />
-                  <div className="flex flex-col gap-4 justify-center">
-                    <p className="text-[14px] text-[#646464] font-medium">
+                  <div className="flex flex-col justify-center gap-4">
+                    <p className="text-[14px] font-medium text-[#646464]">
                       March 22, 2023
                     </p>
-                    <p className="text-[16px] text-black hover:text-[#eab308] ease-in duration-200 cursor-pointer font-bold">
+                    <p className="cursor-pointer text-[16px] font-bold text-black duration-200 ease-in hover:text-[#eab308]">
                       Learn Boxing With Our Trainer John
                     </p>
                   </div>
@@ -188,11 +188,11 @@ function Blog() {
                 {/*  */}
                 <div className="flex gap-8">
                   <img src={Recent6} alt="recent_img" className="w-[10rem]" />
-                  <div className="flex flex-col gap-4 justify-center">
-                    <p className="text-[14px] text-[#646464] font-medium">
+                  <div className="flex flex-col justify-center gap-4">
+                    <p className="text-[14px] font-medium text-[#646464]">
                       March 22, 2023
                     </p>
-                    <p className="text-[16px] text-black hover:text-[#eab308] ease-in duration-200 cursor-pointer font-bold">
+                    <p className="cursor-pointer text-[16px] font-bold text-black duration-200 ease-in hover:text-[#eab308]">
                       How To Get Lean For The Summer
                     </p>
                   </div>
@@ -200,47 +200,47 @@ function Blog() {
               </div>
             </div>
             {/* popular tags */}
-            <div className="flex flex-col bg-[#f8f8f8] my-[35px] p-[30px]">
-              <p className="text-[18px] text-black font-bold mb-5">
+            <div className="my-[35px] flex flex-col bg-[#f8f8f8] p-[30px]">
+              <p className="mb-5 text-[18px] font-bold text-black">
                 Popular Tags
               </p>
-              <span className="w-[40px] h-[3.5px] bg-[#eab308] mb-7"></span>
-              <div className="flex gap-3 text-[16px] text-[#646464] font-medium flex-wrap">
-                <p className="bg-white py-[4px] px-[14px] hover:text-[#eab308] ease-in duration-200 cursor-pointer">
+              <span className="mb-7 h-[3.5px] w-[40px] bg-[#eab308]"></span>
+              <div className="flex flex-wrap gap-3 text-[16px] font-medium text-[#646464]">
+                <p className="cursor-pointer bg-white px-[14px] py-[4px] duration-200 ease-in hover:text-[#eab308]">
                   #Crossfit
                 </p>
-                <p className="bg-white py-[4px] px-[14px] hover:text-[#eab308] ease-in duration-200 cursor-pointer">
+                <p className="cursor-pointer bg-white px-[14px] py-[4px] duration-200 ease-in hover:text-[#eab308]">
                   #Fitness
                 </p>
-                <p className="bg-white py-[4px] px-[14px] hover:text-[#eab308] ease-in duration-200 cursor-pointer">
+                <p className="cursor-pointer bg-white px-[14px] py-[4px] duration-200 ease-in hover:text-[#eab308]">
                   #Gym
                 </p>
-                <p className="bg-white py-[4px] px-[14px] hover:text-[#eab308] ease-in duration-200 cursor-pointer">
+                <p className="cursor-pointer bg-white px-[14px] py-[4px] duration-200 ease-in hover:text-[#eab308]">
                   #Meditation
                 </p>
-                <p className="bg-white py-[4px] px-[14px] hover:text-[#eab308] ease-in duration-200 cursor-pointer">
+                <p className="cursor-pointer bg-white px-[14px] py-[4px] duration-200 ease-in hover:text-[#eab308]">
                   #Running
                 </p>
-                <p className="bg-white py-[4px] px-[14px] hover:text-[#eab308] ease-in duration-200 cursor-pointer">
+                <p className="cursor-pointer bg-white px-[14px] py-[4px] duration-200 ease-in hover:text-[#eab308]">
                   #Workout
                 </p>
-                <p className="bg-white py-[4px] px-[14px] hover:text-[#eab308] ease-in duration-200 cursor-pointer">
+                <p className="cursor-pointer bg-white px-[14px] py-[4px] duration-200 ease-in hover:text-[#eab308]">
                   #Yoga
                 </p>
-                <p className="bg-white py-[4px] px-[14px] hover:text-[#eab308] ease-in duration-200 cursor-pointer">
+                <p className="cursor-pointer bg-white px-[14px] py-[4px] duration-200 ease-in hover:text-[#eab308]">
                   #Boxing
                 </p>
               </div>
             </div>
             {/* banner */}
-            <div className="blog-banner w-full h-[56rem] relative">
-              <p className="absolute text-[34px] font-bold uppercase top-16 left-10 z-[2]">
+            <div className="blog-banner relative h-[56rem] w-full">
+              <p className="absolute left-10 top-16 z-[2] text-[34px] font-bold uppercase">
                 gymat
               </p>
-              <span className="banner-shape top-14 left-0 z-[1] bg-white absolute w-[18rem] h-[60px]"></span>
-              <div className="text-white flex flex-col absolute top-[10rem] left-10">
+              <span className="banner-shape absolute left-0 top-14 z-[1] h-[60px] w-[18rem] bg-white"></span>
+              <div className="absolute left-10 top-[10rem] flex flex-col text-white">
                 <p className="text-[64px] font-bold">34%</p>
-                <p className="text-[20px] font-bold -mt-[10px]">
+                <p className="-mt-[10px] text-[20px] font-bold">
                   Flat Discount
                 </p>
               </div>

@@ -5,52 +5,52 @@ function Wednesday() {
   return (
     <>
       {/* fiter buttons */}
-      <div className="flex flex-wrap gap-4 justify-center">
+      <div className="flex flex-wrap justify-center gap-4">
         <Link
           to="/schedule/monday"
-          className="text-[15px] font-bold border-solid border border-[#d7d7d7] py-[9px] px-[32px] rounded-[23px] hover:bg-[#eab308] ease-in duration-200 hover:shadow-2xl hover:text-white "
+          className="rounded-[23px] border border-solid border-[#d7d7d7] px-[32px] py-[9px] text-[15px] font-bold duration-200 ease-in hover:bg-[#eab308] hover:text-white hover:shadow-2xl"
         >
           Monday
         </Link>
 
         <Link
           to="/schedule/tuesday"
-          className="text-[15px] font-bold border-solid border border-[#d7d7d7] py-[9px] px-[32px] rounded-[23px] hover:bg-[#eab308] ease-in duration-200 hover:shadow-2xl hover:text-white "
+          className="rounded-[23px] border border-solid border-[#d7d7d7] px-[32px] py-[9px] text-[15px] font-bold duration-200 ease-in hover:bg-[#eab308] hover:text-white hover:shadow-2xl"
         >
           Tuesday
         </Link>
 
         <Link
           to="/schedule/wednesday"
-          className="text-[15px] font-bold border-solid border border-[#d7d7d7] py-[9px] px-[32px] rounded-[23px] bg-[#eab308] ease-in duration-200 hover:shadow-2xl text-white "
+          className="rounded-[23px] border border-solid border-[#d7d7d7] bg-[#eab308] px-[32px] py-[9px] text-[15px] font-bold text-white duration-200 ease-in hover:shadow-2xl"
         >
           Wednesday
         </Link>
 
         <Link
           to="/schedule/thursday"
-          className="text-[15px] font-bold border-solid border border-[#d7d7d7] py-[9px] px-[32px] rounded-[23px] hover:bg-[#eab308] ease-in duration-200 hover:shadow-2xl hover:text-white "
+          className="rounded-[23px] border border-solid border-[#d7d7d7] px-[32px] py-[9px] text-[15px] font-bold duration-200 ease-in hover:bg-[#eab308] hover:text-white hover:shadow-2xl"
         >
           Thursday
         </Link>
 
         <Link
           to="/schedule/friday"
-          className="text-[15px] font-bold border-solid border border-[#d7d7d7] py-[9px] px-[32px] rounded-[23px] hover:bg-[#eab308] ease-in duration-200 hover:shadow-2xl hover:text-white "
+          className="rounded-[23px] border border-solid border-[#d7d7d7] px-[32px] py-[9px] text-[15px] font-bold duration-200 ease-in hover:bg-[#eab308] hover:text-white hover:shadow-2xl"
         >
           Friday
         </Link>
 
         <Link
           to="/schedule/saturday"
-          className="text-[15px] font-bold border-solid border border-[#d7d7d7] py-[9px] px-[32px] rounded-[23px] hover:bg-[#eab308] ease-in duration-200 hover:shadow-2xl hover:text-white "
+          className="rounded-[23px] border border-solid border-[#d7d7d7] px-[32px] py-[9px] text-[15px] font-bold duration-200 ease-in hover:bg-[#eab308] hover:text-white hover:shadow-2xl"
         >
           Saturday
         </Link>
 
         <Link
           to="/schedule/sunday"
-          className="text-[15px] font-bold border-solid border border-[#d7d7d7] py-[9px] px-[32px] rounded-[23px] hover:bg-[#eab308] ease-in duration-200 hover:shadow-2xl hover:text-white "
+          className="rounded-[23px] border border-solid border-[#d7d7d7] px-[32px] py-[9px] text-[15px] font-bold duration-200 ease-in hover:bg-[#eab308] hover:text-white hover:shadow-2xl"
         >
           Sunday
         </Link>
@@ -63,119 +63,119 @@ function Wednesday() {
         {/* monday */}
         <div className="flex flex-col gap-3">
           {/* row */}
-          <ul className="flex justify-between w-full min800:flex-col min800:text-center">
+          <ul className="flex w-full justify-between min800:flex-col min800:text-center">
             {/* class name */}
-            <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full">
+            <li className="w-full bg-[#f2f2f2] px-[55px] py-[25px]">
               <p className="text-[14px] font-medium text-[#a0a0a0]">
                 Class Name
               </p>
-              <p className="text-[18px] text-black font-bold mt-3">Cycling</p>
+              <p className="mt-3 text-[18px] font-bold text-black">Cycling</p>
             </li>
             {/* time */}
-            <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
+            <li className="w-full bg-[#f2f2f2] p-[25px] text-center">
               <p className="text-[14px] font-medium text-[#a0a0a0]">Time</p>
-              <p className="text-[18px] text-black font-bold mt-3">
+              <p className="mt-3 text-[18px] font-bold text-black">
                 9:00am - 10:00am
               </p>
             </li>
             {/* trainer */}
-            <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
+            <li className="w-full bg-[#f2f2f2] p-[25px] text-center">
               <p className="text-[14px] font-medium text-[#a0a0a0]">Trainer</p>
-              <p className="text-[18px] text-black font-bold mt-3">
+              <p className="mt-3 text-[18px] font-bold text-black">
                 Mario Vreco
               </p>
             </li>
-            <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full text-right min800:text-center">
-              <button className="text-white text-[15px] font-medium bg-[#555] py-[10px] px-[20px] rounded-[30px] mt-3 hover:bg-[#eab308] ease-in duration-200 ">
+            <li className="w-full bg-[#f2f2f2] px-[55px] py-[25px] text-right min800:text-center">
+              <button className="mt-3 rounded-[30px] bg-[#555] px-[20px] py-[10px] text-[15px] font-medium text-white duration-200 ease-in hover:bg-[#eab308]">
                 Join Now
               </button>
             </li>
           </ul>
           {/* row */}
-          <ul className="flex justify-between w-full min800:flex-col min800:text-center">
+          <ul className="flex w-full justify-between min800:flex-col min800:text-center">
             {/* class name */}
-            <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full">
+            <li className="w-full bg-[#f2f2f2] px-[55px] py-[25px]">
               <p className="text-[14px] font-medium text-[#a0a0a0]">
                 Class Name
               </p>
-              <p className="text-[18px] text-black font-bold mt-3">
+              <p className="mt-3 text-[18px] font-bold text-black">
                 Body Building
               </p>
             </li>
             {/* time */}
-            <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
+            <li className="w-full bg-[#f2f2f2] p-[25px] text-center">
               <p className="text-[14px] font-medium text-[#a0a0a0]">Time</p>
-              <p className="text-[18px] text-black font-bold mt-3">
+              <p className="mt-3 text-[18px] font-bold text-black">
                 10:00pm - 11:00pm
               </p>
             </li>
             {/* trainer */}
-            <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
+            <li className="w-full bg-[#f2f2f2] p-[25px] text-center">
               <p className="text-[14px] font-medium text-[#a0a0a0]">Trainer</p>
-              <p className="text-[18px] text-black font-bold mt-3">
+              <p className="mt-3 text-[18px] font-bold text-black">
                 John Weights
               </p>
             </li>
-            <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full text-right min800:text-center">
-              <button className="text-white text-[15px] font-medium bg-[#555] py-[10px] px-[20px] rounded-[30px] mt-3 hover:bg-[#eab308] ease-in duration-200 ">
+            <li className="w-full bg-[#f2f2f2] px-[55px] py-[25px] text-right min800:text-center">
+              <button className="mt-3 rounded-[30px] bg-[#555] px-[20px] py-[10px] text-[15px] font-medium text-white duration-200 ease-in hover:bg-[#eab308]">
                 Join Now
               </button>
             </li>
           </ul>
           {/* row */}
-          <ul className="flex justify-between w-full min800:flex-col min800:text-center">
+          <ul className="flex w-full justify-between min800:flex-col min800:text-center">
             {/* class name */}
-            <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full">
+            <li className="w-full bg-[#f2f2f2] px-[55px] py-[25px]">
               <p className="text-[14px] font-medium text-[#a0a0a0]">
                 Class Name
               </p>
-              <p className="text-[18px] text-black font-bold mt-3">Fitness</p>
+              <p className="mt-3 text-[18px] font-bold text-black">Fitness</p>
             </li>
             {/* time */}
-            <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
+            <li className="w-full bg-[#f2f2f2] p-[25px] text-center">
               <p className="text-[14px] font-medium text-[#a0a0a0]">Time</p>
-              <p className="text-[18px] text-black font-bold mt-3">
+              <p className="mt-3 text-[18px] font-bold text-black">
                 4:00pm - 5:00pm
               </p>
             </li>
             {/* trainer */}
-            <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
+            <li className="w-full bg-[#f2f2f2] p-[25px] text-center">
               <p className="text-[14px] font-medium text-[#a0a0a0]">Trainer</p>
-              <p className="text-[18px] text-black font-bold mt-3">
+              <p className="mt-3 text-[18px] font-bold text-black">
                 Tom Rizzly
               </p>
             </li>
-            <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full text-right min800:text-center">
-              <button className="text-white text-[15px] font-medium bg-[#555] py-[10px] px-[20px] rounded-[30px] mt-3 hover:bg-[#eab308] ease-in duration-200 ">
+            <li className="w-full bg-[#f2f2f2] px-[55px] py-[25px] text-right min800:text-center">
+              <button className="mt-3 rounded-[30px] bg-[#555] px-[20px] py-[10px] text-[15px] font-medium text-white duration-200 ease-in hover:bg-[#eab308]">
                 Join Now
               </button>
             </li>
           </ul>
           {/* row */}
-          <ul className="flex justify-between w-full min800:flex-col min800:text-center">
+          <ul className="flex w-full justify-between min800:flex-col min800:text-center">
             {/* class name */}
-            <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full">
+            <li className="w-full bg-[#f2f2f2] px-[55px] py-[25px]">
               <p className="text-[14px] font-medium text-[#a0a0a0]">
                 Class Name
               </p>
-              <p className="text-[18px] text-black font-bold mt-3">Running</p>
+              <p className="mt-3 text-[18px] font-bold text-black">Running</p>
             </li>
             {/* time */}
-            <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
+            <li className="w-full bg-[#f2f2f2] p-[25px] text-center">
               <p className="text-[14px] font-medium text-[#a0a0a0]">Time</p>
-              <p className="text-[18px] text-black font-bold mt-3">
+              <p className="mt-3 text-[18px] font-bold text-black">
                 6:00pm - 7:00pm
               </p>
             </li>
             {/* trainer */}
-            <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
+            <li className="w-full bg-[#f2f2f2] p-[25px] text-center">
               <p className="text-[14px] font-medium text-[#a0a0a0]">Trainer</p>
-              <p className="text-[18px] text-black font-bold mt-3">
+              <p className="mt-3 text-[18px] font-bold text-black">
                 Michael Jonson
               </p>
             </li>
-            <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full text-right min800:text-center">
-              <button className="text-white text-[15px] font-medium bg-[#555] py-[10px] px-[20px] rounded-[30px] mt-3 hover:bg-[#eab308] ease-in duration-200 ">
+            <li className="w-full bg-[#f2f2f2] px-[55px] py-[25px] text-right min800:text-center">
+              <button className="mt-3 rounded-[30px] bg-[#555] px-[20px] py-[10px] text-[15px] font-medium text-white duration-200 ease-in hover:bg-[#eab308]">
                 Join Now
               </button>
             </li>

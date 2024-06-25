@@ -4,82 +4,80 @@ function Login() {
   return (
     <>
       <section>
-        <div className="login-banner relative justify-center flex">
-          <h1 className="text-white absolute bottom-[25px] text-[3rem] font-bold">
+        <div className="login-banner relative flex justify-center">
+          <h1 className="absolute bottom-[25px] text-[3rem] font-bold text-white">
             Contact Us
           </h1>
         </div>
         {/* contact */}
-        <div className="bg-white py-[12rem] page-padding grid grid-cols-2 container gap-10 items-center md1000:grid-cols-1 ">
+        <div className="page-padding container grid grid-cols-2 items-center gap-10 bg-white py-[12rem] md1000:grid-cols-1">
           {/* first col */}
-          <div className="md1000:w-[60%] md1000:flex md1000:flex-col md1000:mx-auto min800:w-[90%] min620:w-full">
-            <h2 className="text-black text-[36px] font-bold leading-[1.2]">
+          <div className="md1000:mx-auto md1000:flex md1000:w-[60%] md1000:flex-col min800:w-[90%] min620:w-full">
+            <h2 className="text-[36px] font-bold leading-[1.2] text-black">
               We are here for help you! To Shape Your Body.
             </h2>
-            <p className="text-[16px] w-[95%] text-[#646464] font-medium my-[40px]">
+            <p className="my-[40px] w-[95%] text-[16px] font-medium text-[#646464]">
               At Fitbox, we are dedicated to helping you achieve the body of
               your dreams. Our expert trainers and nutritionists will work with
               you to create a personalized fitness and nutrition plan that helps
               you reach your specific goals.
             </p>
-            <div className="grid grid-cols-2 grid-rows-2 gap-y-20 min620:grid-cols-1 min620:mx-auto">
-              <div className="flex flex-col relative">
-                <h3 className="text-[2rem] font-bold mb-10">
-                  Mahdia, Tunisia
-                </h3>
-                <span className="bg-[#eab308] w-[50px] h-[4px] absolute top-[33px]"></span>
+            <div className="grid grid-cols-2 grid-rows-2 gap-y-20 min620:mx-auto min620:grid-cols-1">
+              <div className="relative flex flex-col">
+                <h3 className="mb-10 text-[2rem] font-bold">Mahdia, Tunisia</h3>
+                <span className="absolute top-[33px] h-[4px] w-[50px] bg-[#eab308]"></span>
                 <p className="text-[15px] font-medium text-[#646464]">
                   5100 Zouila,
                   <br /> Mahdia, Mahdia
                 </p>
               </div>
               {/*  */}
-              <div className="flex flex-col relative">
-                <h3 className="text-[2rem] font-bold mb-10">Opening Hours</h3>
-                <span className="bg-[#eab308] w-[50px] h-[4px] absolute top-[33px]"></span>
+              <div className="relative flex flex-col">
+                <h3 className="mb-10 text-[2rem] font-bold">Opening Hours</h3>
+                <span className="absolute top-[33px] h-[4px] w-[50px] bg-[#eab308]"></span>
                 <div className="text-[15px] font-medium text-[#646464]">
                   <p>Mon to Fri: 7:30 am — 1:00 am</p>
                   <p>Mon to Fri: 7:30 am — 1:00 am</p>
                 </div>
               </div>
               {/*  */}
-              <div className="flex flex-col relative">
-                <h3 className="text-[2rem] font-bold mb-10">Information</h3>
-                <span className="bg-[#eab308] w-[50px] h-[4px] absolute top-[33px]"></span>
+              <div className="relative flex flex-col">
+                <h3 className="mb-10 text-[2rem] font-bold">Information</h3>
+                <span className="absolute top-[33px] h-[4px] w-[50px] bg-[#eab308]"></span>
                 <div className="text-[15px] font-medium text-[#646464]">
                   <p>+216-123-4567</p>
                   <p>&nbsp; fitbox@gymail.com</p>
                 </div>
               </div>
               {/*  */}
-              <div className="flex flex-col relative">
-                <h3 className="text-[2rem] font-bold mb-10">Follow Us On</h3>
-                <span className="bg-[#eab308] w-[50px] h-[4px] absolute top-[33px]"></span>
-                <div className="text-[18px] font-medium text-black flex gap-5">
-                  <i className="fa-brands fa-facebook-f px-[16px] py-[13px] bg-[#f4f4f4] rounded-full cursor-pointer hover:bg-[#eab308] ease-in duration-200 hover:text-white"></i>
-                  <i className="fa-brands fa-twitter p-[13.5px] bg-[#f4f4f4] rounded-full cursor-pointer hover:bg-[#eab308] ease-in duration-200 hover:text-white"></i>
-                  <i className="fa-brands fa-instagram p-[13.5px] bg-[#f4f4f4] rounded-full cursor-pointer hover:bg-[#eab308] ease-in duration-200 hover:text-white"></i>
-                  <i className="fa-brands fa-pinterest-p p-[13.5px] bg-[#f4f4f4] rounded-full cursor-pointer hover:bg-[#eab308] ease-in duration-200 hover:text-white"></i>
+              <div className="relative flex flex-col">
+                <h3 className="mb-10 text-[2rem] font-bold">Follow Us On</h3>
+                <span className="absolute top-[33px] h-[4px] w-[50px] bg-[#eab308]"></span>
+                <div className="flex gap-5 text-[18px] font-medium text-black">
+                  <i className="fa-brands fa-facebook-f cursor-pointer rounded-full bg-[#f4f4f4] px-[16px] py-[13px] duration-200 ease-in hover:bg-[#eab308] hover:text-white"></i>
+                  <i className="fa-brands fa-twitter cursor-pointer rounded-full bg-[#f4f4f4] p-[13.5px] duration-200 ease-in hover:bg-[#eab308] hover:text-white"></i>
+                  <i className="fa-brands fa-instagram cursor-pointer rounded-full bg-[#f4f4f4] p-[13.5px] duration-200 ease-in hover:bg-[#eab308] hover:text-white"></i>
+                  <i className="fa-brands fa-pinterest-p cursor-pointer rounded-full bg-[#f4f4f4] p-[13.5px] duration-200 ease-in hover:bg-[#eab308] hover:text-white"></i>
                 </div>
               </div>
             </div>
           </div>
 
           {/* second col ---*/}
-          <form className="flex flex-col pt-[30px] pr-[50px] pb-[50px] pl-[45px] bg-[#f8f8f8] relative md1000:w-[65%] md1000:flex md1000:flex-col md1000:mx-auto md1000:mt-14 min800:w-[90%] min620:w-full">
-            <h3 className="text-[28px] font-bold mb-14">Leave Us Your Info</h3>
-            <span className="bg-[#eab308] w-[50px] h-[4px] absolute top-[77px]"></span>
+          <form className="relative flex flex-col bg-[#f8f8f8] pb-[50px] pl-[45px] pr-[50px] pt-[30px] md1000:mx-auto md1000:mt-14 md1000:flex md1000:w-[65%] md1000:flex-col min800:w-[90%] min620:w-full">
+            <h3 className="mb-14 text-[28px] font-bold">Leave Us Your Info</h3>
+            <span className="absolute top-[77px] h-[4px] w-[50px] bg-[#eab308]"></span>
             <input
-              className="w-full py-[12px] px-[20px] h-[51px] text-[14px] border border-solid border-[#e4e4e4] outline-none mb-8"
+              className="mb-8 h-[51px] w-full border border-solid border-[#e4e4e4] px-[20px] py-[12px] text-[14px] outline-none"
               placeholder="Full Name *"
               type="text"
             ></input>
             <input
-              className="w-full py-[12px] px-[20px] h-[51px] text-[14px] border border-solid border-[#e4e4e4] outline-none mb-8"
+              className="mb-8 h-[51px] w-full border border-solid border-[#e4e4e4] px-[20px] py-[12px] text-[14px] outline-none"
               placeholder="Email Address *"
               type="email"
             ></input>
-            <select className="w-full py-[12px] px-[20px] h-[51px] text-[14px] border border-solid border-[#e4e4e4] outline-none mb-8">
+            <select className="mb-8 h-[51px] w-full border border-solid border-[#e4e4e4] px-[20px] py-[12px] text-[14px] outline-none">
               <option>Select Class</option>
               <option>Body Building</option>
               <option>Boxing</option>
@@ -93,11 +91,11 @@ function Login() {
             </select>
             <textarea
               placeholder="Comment"
-              className="w-full py-[12px] px-[20px] h-[140px] text-[14px] border border-solid border-[#e4e4e4] outline-none mb-8"
+              className="mb-8 h-[140px] w-full border border-solid border-[#e4e4e4] px-[20px] py-[12px] text-[14px] outline-none"
             ></textarea>
             <button
               type="submit"
-              className="text-white bg-[#eab308] w-fit py-[15px] px-[30px] font-bold text-[14px] uppercase self-center mt-6"
+              className="mt-6 w-fit self-center bg-[#eab308] px-[30px] py-[15px] text-[14px] font-bold uppercase text-white"
             >
               submit now
             </button>

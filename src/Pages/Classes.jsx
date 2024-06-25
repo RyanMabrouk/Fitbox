@@ -18,16 +18,16 @@ function Classes() {
 
   return (
     <>
-      <section className="login-section text-center ">
-        <div className="login-banner relative justify-center flex">
-          <h1 className="text-white absolute bottom-[25px] text-[3rem] font-bold">
+      <section className="login-section text-center">
+        <div className="login-banner relative flex justify-center">
+          <h1 className="absolute bottom-[25px] text-[3rem] font-bold text-white">
             Classes
           </h1>
         </div>
 
         {/* boxes 1*/}
         <div
-          className={`container gap-12 page-padding py-[10rem] md1000:grid-cols-2 min620:grid-cols-1  grid-cols-3 grid-rows-3 text-left ${
+          className={`page-padding container grid-cols-3 grid-rows-3 gap-12 py-[10rem] text-left md1000:grid-cols-2 min620:grid-cols-1 ${
             load ? "grid" : "hidden"
           }`}
         >
@@ -83,7 +83,7 @@ function Classes() {
 
         {/* boxes 2*/}
         <div
-          className={`container gap-12 page-padding py-[10rem] grid-cols-3 md1000:grid-cols-2 min620:grid-cols-1  grid-rows-3 text-left  ${
+          className={`page-padding container grid-cols-3 grid-rows-3 gap-12 py-[10rem] text-left md1000:grid-cols-2 min620:grid-cols-1 ${
             load ? "hidden" : "grid"
           }`}
         >
@@ -162,7 +162,7 @@ function Classes() {
         </div>
 
         <button
-          className="text-[1.5rem] text-white bg-slate-600 px-14 py-6 font-medium uppercase shadow-2xl mb-14"
+          className="mb-14 bg-slate-600 px-14 py-6 text-[1.5rem] font-medium uppercase text-white shadow-2xl"
           onClick={() => {
             loadMore();
             goTop();

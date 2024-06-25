@@ -14,7 +14,9 @@ function Navbar() {
   const [spin, setSpin] = useState(false);
   const [sticky, setSticky] = useState(false);
   const [sidebar, setSideBar] = useState(false);
+  console.log("🚀 ~ Navbar ~ sidebar:", sidebar);
   const [hamburger, setHamburger] = useState(false);
+  console.log("🚀 ~ Navbar ~ hamburger:", hamburger);
 
   const joinSpin = () => {
     setSpin(true);
@@ -45,19 +47,19 @@ function Navbar() {
 
   // sidebar
   const sideBar = () => {
-    setSideBar(!sidebar);
+    setSideBar((prev) => !prev);
   };
 
   // hamburger menu
   const hamburgerMenu = () => {
-    setHamburger(!hamburger);
+    setHamburger((prev) => !prev);
   };
 
   return (
     <>
       <nav
-        className={`flex flex-row bg-transparent items-center justify-between py-8 px-12  fixed top-0 left-0 right-0 w-full z-50 ${
-          sticky ? "shadow-xl !bg-black" : ""
+        className={`fixed left-0 right-0 top-0 z-50 flex w-full flex-row items-center justify-between bg-transparent px-12 py-8 ${
+          sticky ? "!bg-black shadow-xl" : ""
         }`}
       >
         <Link to="/">
@@ -65,33 +67,30 @@ function Navbar() {
             src={Logo}
             alt="logo_img"
             onClick={goTop}
-            className="w-32 h-auto max-w-full max-h-full"
+            className="h-auto max-h-full w-32 max-w-full"
           />
         </Link>
-        <div className="navlist-nav">
-          <NavList />
-        </div>
+        <NavList />
         <div className="flex items-center gap-10">
           <div className="flex gap-10">
             {/* mobile menu -------------- */}
-
             {/* hamburger menu */}
             <div
-              className={`flex top-0 flex-col fixed w-full left-0 h-screen bg-white z-[9999999999] py-[60px] px-[40px] ease-in-out duration-500  ${
-                hamburger ? "left-0" : "-left-[100%]"
+              className={`fixed top-0 z-[100] flex h-screen w-full flex-col bg-white px-[40px] py-[60px] duration-500 ease-in-out ${
+                hamburger ? "!left-0" : "!-left-[150%]"
               }`}
             >
               <i
                 onClick={hamburgerMenu}
-                className="fa-solid fa-xmark text-[#eab308] text-[3.3rem] cursor-pointer self-end"
+                className="fa-solid fa-xmark cursor-pointer self-end text-[3.3rem] text-[#eab308]"
               ></i>
 
               {/* links */}
-              <ul className="text-center flex flex-col gap-10 absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
+              <ul className="absolute left-[50%] top-[50%] flex -translate-x-[50%] -translate-y-[50%] flex-col gap-10 text-center">
                 <li onClick={hamburgerMenu}>
                   <a
                     onClick={() => window.top(0, 0)}
-                    className="text-[2rem] font-medium hover:text-[#eab308] ease-in duration-200"
+                    className="text-[2rem] font-medium duration-200 ease-in hover:text-[#eab308]"
                     href="/#home"
                   >
                     Home
@@ -100,7 +99,7 @@ function Navbar() {
                 <li onClick={hamburgerMenu}>
                   <Link
                     onClick={() => window.top(0, 0)}
-                    className="text-[2rem] font-medium hover:text-[#eab308] ease-in duration-200"
+                    className="text-[2rem] font-medium duration-200 ease-in hover:text-[#eab308]"
                     to="/about"
                   >
                     About
@@ -109,7 +108,7 @@ function Navbar() {
                 <li onClick={hamburgerMenu}>
                   <Link
                     onClick={() => window.top(0, 0)}
-                    className="text-[2rem] font-medium hover:text-[#eab308] ease-in duration-200"
+                    className="text-[2rem] font-medium duration-200 ease-in hover:text-[#eab308]"
                     to="/schedule/monday"
                   >
                     Schedule
@@ -118,7 +117,7 @@ function Navbar() {
                 <li onClick={hamburgerMenu}>
                   <Link
                     onClick={() => window.top(0, 0)}
-                    className="text-[2rem] font-medium hover:text-[#eab308] ease-in duration-200"
+                    className="text-[2rem] font-medium duration-200 ease-in hover:text-[#eab308]"
                     to="/gallery/page-1"
                   >
                     Gallery
@@ -127,7 +126,7 @@ function Navbar() {
                 <li onClick={hamburgerMenu}>
                   <Link
                     onClick={() => window.top(0, 0)}
-                    className="text-[2rem] font-medium hover:text-[#eab308] ease-in duration-200"
+                    className="text-[2rem] font-medium duration-200 ease-in hover:text-[#eab308]"
                     to="/blog"
                   >
                     Blog
@@ -136,7 +135,7 @@ function Navbar() {
                 <li onClick={hamburgerMenu}>
                   <Link
                     onClick={() => window.top(0, 0)}
-                    className="text-[2rem] font-medium hover:text-[#eab308] ease-in duration-200"
+                    className="text-[2rem] font-medium duration-200 ease-in hover:text-[#eab308]"
                     to="/contact"
                   >
                     Contact
@@ -145,7 +144,7 @@ function Navbar() {
                 <li onClick={hamburgerMenu}>
                   <Link
                     onClick={() => window.top(0, 0)}
-                    className="text-[2rem] font-medium hover:text-[#eab308] ease-in duration-200"
+                    className="text-[2rem] font-medium duration-200 ease-in hover:text-[#eab308]"
                     to="/pricing"
                   >
                     Pricing
@@ -154,7 +153,7 @@ function Navbar() {
                 <li onClick={hamburgerMenu}>
                   <Link
                     onClick={() => window.top(0, 0)}
-                    className="text-[2rem] font-medium hover:text-[#eab308] ease-in duration-200"
+                    className="text-[2rem] font-medium duration-200 ease-in hover:text-[#eab308]"
                     to="/classes"
                   >
                     Classes
@@ -162,21 +161,19 @@ function Navbar() {
                 </li>
               </ul>
             </div>
-
             {/* sidebar */}
-
             <div>
               <div
-                className={`flex flex-col fixed w-[40rem] min450:w-full h-[100vh] bg-white top-0 left-0 z-[9999999999] p-[45px] gap-24 overflow-x-hidden ease-in-out duration-[0.5s] ${
-                  sidebar ? "left-0" : "-left-[100%]"
+                className={`fixed top-0 z-[50] flex h-[100vh] w-[40rem] flex-col gap-24 overflow-x-hidden bg-white p-[45px] duration-[0.5s] ease-in-out min450:w-full ${
+                  sidebar ? "!left-0" : "!-left-[150%]"
                 }`}
               >
                 {/* logo & X */}
-                <div className="flex justify-between items-center">
+                <div className="flex items-center justify-between">
                   <img src={LogoSide} alt="logo_img" className="w-[13rem]" />
                   <i
                     onClick={sideBar}
-                    className="fa-solid fa-xmark text-[#eab308] text-[3.3rem] cursor-pointer"
+                    className="fa-solid fa-xmark cursor-pointer text-[3.3rem] text-[#eab308]"
                   ></i>
                 </div>
                 {/* about us */}
@@ -196,47 +193,47 @@ function Navbar() {
                     <img
                       src={SideImg1}
                       alt="sidebar_gallery"
-                      className="rounded-xl cursor-pointer "
+                      className="cursor-pointer rounded-xl"
                     />
                     <img
                       src={SideImg2}
                       alt="sidebar_gallery"
-                      className="rounded-xl cursor-pointer "
+                      className="cursor-pointer rounded-xl"
                     />
                     <img
                       src={SideImg3}
                       alt="sidebar_gallery"
-                      className="rounded-xl cursor-pointer "
+                      className="cursor-pointer rounded-xl"
                     />
                     <img
                       src={SideImg4}
                       alt="sidebar_gallery"
-                      className="rounded-xl cursor-pointer "
+                      className="cursor-pointer rounded-xl"
                     />
                     <img
                       src={SideImg5}
                       alt="sidebar_gallery"
-                      className="rounded-xl cursor-pointer "
+                      className="cursor-pointer rounded-xl"
                     />
                     <img
                       src={SideImg6}
                       alt="sidebar_gallery"
-                      className="rounded-xl cursor-pointer "
+                      className="cursor-pointer rounded-xl"
                     />
                   </div>
                 </div>
                 {/* contact */}
                 <div className="flex flex-col gap-6">
                   <h3 className="text-[2rem] font-bold">Contact Info</h3>
-                  <p className="text-[1.6rem] font-medium text-[#000000b1] hover:text-[#eab308] cursor-pointer ease-in duration-200">
+                  <p className="cursor-pointer text-[1.6rem] font-medium text-[#000000b1] duration-200 ease-in hover:text-[#eab308]">
                     <i className="fa-solid fa-location-dot text-[#eab308]"></i>
                     &nbsp; 5100 Zouila, Mahdia , Mahdia
                   </p>
-                  <p className="text-[1.6rem] font-medium text-[#000000b1] hover:text-[#eab308] cursor-pointer ease-in duration-200">
+                  <p className="cursor-pointer text-[1.6rem] font-medium text-[#000000b1] duration-200 ease-in hover:text-[#eab308]">
                     <i className="fa-solid fa-phone text-[#eab308]"></i>&nbsp;
                     +216 29701532
                   </p>
-                  <p className="text-[1.6rem] font-medium text-[#000000b1] hover:text-[#eab308] cursor-pointer ease-in duration-200">
+                  <p className="cursor-pointer text-[1.6rem] font-medium text-[#000000b1] duration-200 ease-in hover:text-[#eab308]">
                     <i className="fa-solid fa-envelope text-[#eab308]"></i>
                     &nbsp; fitbox@gymail.com
                   </p>
@@ -245,13 +242,13 @@ function Navbar() {
                 <div className="flex flex-col gap-6">
                   <h3 className="text-[2rem] font-bold">Follow Us</h3>
                   <div className="flex gap-5">
-                    <span className="bg-[#eab308] rounded-full py-[12px] px-[17px] cursor-pointer">
+                    <span className="cursor-pointer rounded-full bg-[#eab308] px-[17px] py-[12px]">
                       <i className="fa-brands fa-facebook-f text-[2.2rem] text-white"></i>
                     </span>
-                    <span className="bg-[#eab308] rounded-full py-[12px] px-[12px] cursor-pointer">
+                    <span className="cursor-pointer rounded-full bg-[#eab308] px-[12px] py-[12px]">
                       <i className="fa-brands fa-twitter text-[2.2rem] text-white"></i>
                     </span>
-                    <span className="bg-[#eab308] rounded-full py-[10px] px-[13px] cursor-pointer">
+                    <span className="cursor-pointer rounded-full bg-[#eab308] px-[13px] py-[10px]">
                       <i className="fa-brands fa-instagram text-[2.2rem] text-white"></i>
                     </span>
                   </div>
@@ -262,33 +259,33 @@ function Navbar() {
             {/* hamburger */}
             <i
               onClick={hamburgerMenu}
-              className="fa-bars fa-solid hidden text-white text-4xl cursor-pointer hover:text-[#eab308] ease-in duration-200"
+              className="fa-bars fa-solid cursor-pointer text-4xl text-white duration-200 ease-in hover:text-[#eab308]"
             ></i>
             {/* account */}
             <Link onClick={goTop} to="/signup" title="signup_button">
-              <i className="fa-regular fa-user  text-white text-4xl cursor-pointer hover:text-[#eab308] ease-in duration-200"></i>
+              <i className="fa-regular fa-user cursor-pointer text-4xl text-white duration-200 ease-in hover:text-[#eab308]"></i>
             </Link>
             {/* sidebar */}
             <i
               onClick={sideBar}
-              className="fa-regular fa-chart-bar text-white text-4xl cursor-pointer hover:text-[#eab308] ease-in duration-200"
+              className="fa-regular fa-chart-bar cursor-pointer text-4xl text-white duration-200 ease-in hover:text-[#eab308]"
             ></i>
           </div>
           {/* spin box */}
-          <div className="border-[rgb(255,255,255,0.3)] border-solid border-2  p-2 rounded-md min620:hidden">
+          <div className="rounded-md border-2 border-solid border-[rgb(255,255,255,0.3)] p-2 min620:hidden">
             <Link
               onClick={goTop}
               to={"/contact"}
               onMouseEnter={joinSpin}
               onMouseLeave={stopSpin}
-              className="flex items-center "
+              className="flex items-center"
             >
               <i
-                className={`fa-solid fa-plus bg-[#eab308] text-white text-2xl py-3 px-4 rounded-md ${
+                className={`fa-solid fa-plus rounded-md bg-[#eab308] px-4 py-3 text-2xl text-white ${
                   spin ? "nav-btn-hover" : ""
                 }`}
               ></i>
-              <h3 className="text-white text-[14px] font-bold uppercase ml-4 mr-8 tracking-wider">
+              <h3 className="ml-4 mr-8 text-[14px] font-bold uppercase tracking-wider text-white">
                 join class now
               </h3>
             </Link>
